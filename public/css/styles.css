@@ -1,0 +1,255 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+html, 
+body {
+    height: 100%;
+}
+
+header {
+	text-align: center; 
+}
+
+#row1{
+	height: 60%; 
+}
+
+.dropdown_button
+{
+    float: left;
+    border: 1px solid black;
+}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0; 
+
+	> .col,
+	> [class*="col-"]
+	{
+		padding-right: 0; 
+		padding-left: 0; 
+	}
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.container
+{
+	max-width: 100%; 
+}
+
+.nav {
+    display: inline-block;
+}
+
+.container1 {
+    display: inline-block;
+    cursor: pointer;
+    float: right; 
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.search-container{
+	position: relative;
+	margin-right: 10%;
+}
+
+.search-container #searchInput{
+	width: 100%; 
+}
+
+.search-container #searchButton{
+	float: right;
+	margin-left: 95%;
+	height: 100%;
+	position: absolute;  
+}
+
+.shopcart
+{
+	margin-top: 3px; 
+	margin-left: 10px; 
+}
+
+img[src=""]{
+	display: none;
+}
+
+img[src=".jpg"]{
+	display: inline-block;   
+}
+
+@media only screen and (min-width: 350px)
+{
+	#display-frame{
+		width: 97px; 
+		height: 117px; 
+	}
+}
+
+@media only screen and (min-width: 500px)
+{
+	#display-frame{
+		width: 130px; 
+		height: 156px; 
+	}
+}
+
+@media only screen and (min-width: 565px)
+{
+	#display-frame{
+		width: 160px; 
+		height: 180px; 
+	}
+}
+
+@media only screen and (min-width: 685px)
+{
+	#display-frame{
+		width: 200px; 
+		height: 240px; 
+	}
+}
+
+@media only screen and (min-width: 1000px)
+{
+	#display-frame{
+		width: 300px; 
+		height: 360px; 
+	}
+}
+
+#display-frame {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#display-frame:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .shopcart {
+        margin-top: 12px;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #efefef;
+  text-align: center;
+}
