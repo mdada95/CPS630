@@ -8,7 +8,6 @@ function myFunction(x) {
 
 //jquery
 $( document ).ready(function() {
-	console.log("HELLO MA JIGGA");
 	var first = $( "header:first" ).text();
 	if (first=="Database Connected Successfully")
 	{
